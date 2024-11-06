@@ -6,6 +6,7 @@
     <title>Vishruth Reddy | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Navigation Bar -->
@@ -24,6 +25,11 @@
     <section id="home">
         <h2>Welcome to My Portfolio</h2>
         <p>I'm a Site Reliability Engineer passionate about cloud platforms, automation, and infrastructure management.</p>
+
+        <!-- Profile Photo -->
+        <img src="images/profile.jpg" alt="Vishruth's Profile Photo" style="width:200px; border-radius:50%;">
+        
+        <button onclick="changeBackgroundColor()">Change Background Color</button>
     </section>
 
     <!-- About Section -->
@@ -59,82 +65,18 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: vishruth@example.com</p>
-        <p>LinkedIn: [LinkedIn Profile Link]</p>
+        <p>Email: vishruthreddy0428@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/vishruth-971629192" target="_blank">Vishruth's LinkedIn</a></p>
     </section>
-    /* Reset default browser styles */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    /* General Styles */
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: #333;
-    }
-    
-    nav {
-        background-color: #333;
-        color: #fff;
-        padding: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    nav ul {
-        list-style: none;
-        display: flex;
-    }
-    
-    nav ul li {
-        margin-left: 1.5rem;
-    }
-    
-    nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    
-    section {
-        padding: 2rem;
-        text-align: center;
-    }
-    
-    section#home {
-        background: #f4f4f4;
-        padding: 4rem 2rem;
-    }
-    
-    h2 {
-        margin-bottom: 1rem;
-        color: #333;
-    }
-    
-    .project {
-        border: 1px solid #ddd;
-        padding: 1rem;
-        margin: 1rem 0;
-    }
-    
-    #skills ul {
-        list-style-type: none;
-        margin-top: 1rem;
-    }
-    
-    #contact {
-        background-color: #333;
-        color: #fff;
-        padding: 2rem;
-    }
-    
-    #contact p {
-        margin: 0.5rem 0;
-    }
-    
+
+    <!-- JavaScript for Background Color Change -->
+    <script>
+        function changeBackgroundColor() {
+            const colors = ["#ffadad", "#ffd6a5", "#fdffb6", "#caffbf", "#9bf6ff", "#a0c4ff", "#bdb2ff", "#ffc6ff"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+
 </body>
 </html>
